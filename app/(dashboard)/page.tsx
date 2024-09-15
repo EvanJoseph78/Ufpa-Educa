@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { AuthorsList } from "../_components/authors-list";
-import { ModeToggle } from "@/components/mode-toggle";
-import { UserButton } from "@clerk/nextjs";
-
 
 export default function Home() {
   return (
@@ -30,9 +27,6 @@ export default function Home() {
             <Link href={"/sign-up"}>
               <Button variant={"ghost"} className='border'>Login</Button>
             </Link>
-
-            <ModeToggle></ModeToggle>
-            <UserButton></UserButton>
 
           </div>
         </header>

@@ -47,7 +47,7 @@ export function AuthorsList() {
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
             <div className="p-2">
               <Card>
-                <CardContent className="flex flex-col items-center justify-center p-4">
+                <CardContent className="flex flex-col items-center justify-center p-4 dark:bg-dark-color">
                   <img
                     src={author.urlImg}
                     alt={author.name}
