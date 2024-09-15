@@ -4,6 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { UserButton } from "@clerk/nextjs";
 import { Menu } from "lucide-react";
 import { SideBar } from "./sidebar";
+import { NavbarRoutes } from "./navbar-routes";
 
 export const Navbar = () => {
   return (
@@ -29,10 +30,7 @@ export const Navbar = () => {
 
       </div>
 
-      <div className="flex items-center gap-2">
-        <ModeToggle></ModeToggle>
-        <UserButton></UserButton>
-      </div>
+      <NavbarRoutes></NavbarRoutes>
     </div>
   );
 };
