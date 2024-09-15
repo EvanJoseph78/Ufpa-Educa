@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { AuthorsList } from "../_components/authors-list";
+import { AuthorsList } from "../../_components/authors-list";
 
 export default function Home() {
   return (
@@ -45,7 +45,7 @@ export default function Home() {
         </div>
 
         <div className='flex justify-center items-center w-screen px-16 flex-col border-t py-8'>
-          <h1 className="text-3xl font-bold mb-4">Autores do projeto</h1>
+          <h1 className="text-3xl font-bold mb-4 ">Autores do projeto</h1>
           <AuthorsList></AuthorsList>
         </div>
 

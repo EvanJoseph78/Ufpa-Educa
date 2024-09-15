@@ -5,7 +5,7 @@ import { Logo } from "./logo";
 
 export const SideBar = () => {
   return (
-    <div className="h-full justify-between border-r flex flex-col overflow-y-auto shadow-sm pt-6 bg-white dark:bg-dark-color">
+    <div className="h-full w-full justify-between border-r flex flex-col overflow-y-auto shadow-sm pt-6 bg-white dark:bg-dark-color">
       <div className="p-x6 h-full space-y-6">
         <Logo />
         <div className="flex flex-col w-full h-full">
