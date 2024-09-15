@@ -54,7 +54,7 @@ export const NavbarRoutes = () => {
         <Skeleton className="h-9 w-9 rounded-full"></Skeleton>
       ) : (
         /* Condicional para verificar se o usuário está autenticado */
-        userInfo.user ? (
+        isLoged ? (
           <div className="h-9 w-9 rounded-full flex content-center items-center">
             <UserButton />
           </div>

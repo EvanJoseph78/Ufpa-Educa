@@ -1,7 +1,5 @@
-import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { UserButton } from "@clerk/nextjs";
 import { Menu } from "lucide-react";
 import { SideBar } from "./sidebar";
 import { NavbarRoutes } from "./navbar-routes";
