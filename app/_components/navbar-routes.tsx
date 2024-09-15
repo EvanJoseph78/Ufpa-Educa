@@ -1,6 +1,7 @@
 "use client"
 
 import { ModeToggle } from "@/components/mode-toggle";
+import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Skeleton } from "@/components/ui/skeleton";
 import { UserButton, useUser } from "@clerk/nextjs";
@@ -12,7 +13,7 @@ export const NavbarRoutes = () => {
 
   const userInfo = useUser();
   const router = useRouter();
-  const adminUserId = "user_2h66pveKdZAu3AjnVfyLEuCQBSn";
+  const adminUserId = "user_2m5dnPQeDTqboE6wL7bCV6I611q";
   const [isAdmin, setIsAdmin] = useState(false);
   const [isLoged, setIsLoged] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -22,6 +23,7 @@ export const NavbarRoutes = () => {
 
     if (userInfo.user) {
       setIsLoged(true);
+      console.log(userInfo.user);
     } else {
       setIsLoged(false);
     };
@@ -32,6 +34,7 @@ export const NavbarRoutes = () => {
       setIsAdmin(false)
     }
 
+
     setIsLoading(false);
   }, [userInfo])
 
@@ -39,6 +42,10 @@ export const NavbarRoutes = () => {
 
   return (
     <div className="flex flex-row gap-2 content-center items-center">
+      {isAdmin && (
+        <Button>Modo Professor</Button>
+      )}
+
       {/* Alternância de tema */}
       <ModeToggle />
 
